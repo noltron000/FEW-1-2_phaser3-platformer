@@ -21,5 +21,3 @@ function create() {
 
 function update() {
 }
-
-}
