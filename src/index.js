@@ -13,11 +13,11 @@ const config = {
 
 const game = new Phaser.Game(config);
 
-function preload() {
+const preload = () => {
 }
 
-function create() {
+const create = () => {
 }
 
-function update() {
+const update = () => {
 }
