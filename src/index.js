@@ -1,5 +1,7 @@
 import 'phaser';
 
+
+
 function preload() {
 	this.load.image('sky', 'src/assets/sky.png');
 	this.load.image('ground', 'src/assets/platform.png');
@@ -111,7 +113,7 @@ function collectStar(player, star) {
 
 	//  Add and update the score
 	turbo += 50
-	score += 1000 * Math.random() - 400;
+	score += Phaser.Math.Between(-9, 10);
 	scoreText.setText('Score: ' + score);
 
 	let x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
